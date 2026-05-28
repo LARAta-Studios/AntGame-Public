@@ -28,6 +28,15 @@ A 2d Game where we play as a father Ant who needs to take a cookie crumb to his 
 - Optimized Mobile controls
 - 30 handcrafted levels
 
+<img width="500" height="300" alt="Screenshot 2026-05-28 141841" src="https://github.com/user-attachments/assets/f987d943-99d1-49a0-b017-8a6977b69e3a" />
+<img width="500" height="300" alt="Screenshot 2026-05-28 142039" src="https://github.com/user-attachments/assets/a7e134af-5c9c-4852-848c-35c431c0ae1f" />
+
+<img width="500" height="300" alt="Screenshot 2026-05-28 142137" src="https://github.com/user-attachments/assets/7986f254-1c89-4d5f-ae86-3430fe1b4864" />
+<img width="500" height="300" alt="Screenshot 2026-05-28 144254" src="https://github.com/user-attachments/assets/32983d3c-b921-48ef-9549-b48cd2ee9190" />
+
+
+
+
 
 ---
 
@@ -48,11 +57,13 @@ Throught this project I had to take multiple important decisions regarding the p
 At the beginning of the project I was going to detect ground using the collision functions and tags, every time the player is gorunded it would be able to jump. This worked for some time until I wanted the player to be able to jump from the top of objects like spikes, or the ball and since having it check for multiple tags would increase the complexity of the code, I decided to detect ground in a complete different way which was having a ground transform object located an the feet of the player and I could check if the user could jump using the OverlapCircle function in Unity, this function essentially checks if 2 tranforms are within a given radius, so if the ground check transform is far from the ground then the player would not be grounded. This ended up improving the game feel in the future because it also solved another issue which was when a ground tagged object was the ceiling or ground... since the ground check is under the player even if the player touches a ceiling it would not detect it as ground because it isnt within the radius.
 
 
-
-
 ### 🚀Level Progression🚀
 I knew that I wanted to have a level selection system but I had to decide on whether the levels are unlocked from the beginning or they needed to be progressively unlocked. I ended up deciding on make them unlockable as the user reaches each level, this way the levels that intend to teach the user some game mechanics work as intended and users would feel proud as they unlock new levels.
 
+
+<img width="400" height="200" alt="Screenshot 2026-05-28 141541" src="https://github.com/user-attachments/assets/b8d98b79-23ad-42cb-af89-1e222750d148" />
+
+<img width="400" height="200" alt="Screenshot 2026-05-28 144310" src="https://github.com/user-attachments/assets/7d2c29c9-4b89-44fc-993c-fc5ba2b5c7ea" />
 
 
 ### 🔗Pulling Mechanic🔗
